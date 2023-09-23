@@ -14,7 +14,8 @@ int main()
 	printf("Enter a number: ");
 	scanf("%d",&n);
 	/*Factorial*/
-	printf("factorial = %d\n",factorial(n));
+	int res=factorial(n);
+	printf("Factorial = %d\n",res);
 	return 0;
 }
 
