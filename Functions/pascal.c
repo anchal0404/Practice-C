@@ -9,6 +9,7 @@ int factorial(int x)
 	return fact;
 }
 
+
 int combinations(int n,int r)
 {
 	int ncr=1;
@@ -32,5 +33,7 @@ int main(int argc, char const *argv[])
 		}
 		printf("\n");
 	}
+
+	
 	return 0;
 }

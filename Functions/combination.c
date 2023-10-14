@@ -9,6 +9,14 @@ int factorial(int x)
 	return fact;
 }
 
+int permutations(int n,int r)
+{
+	int npr=1;
+	npr = factorial(n)/factorial(n-r);
+	return npr;
+}
+
+
 int combinations(int n,int r)
 {
 	int ncr=1;
@@ -20,8 +28,10 @@ int main(int argc, char const *argv[])
 	int n=1;
 	printf("Enter n: ");
 	scanf("%d",&n);
+	int r =1;
 	printf("Enter r:");
 	scanf("%d",&r);
-	printf("%d",combinations(n,r));
+	printf("combinations = %d\n",combinations(n,r));
+	printf("permutations = %d\n",permutations(n,r));
 	return 0;
 }
