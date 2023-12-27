@@ -18,9 +18,5 @@ int main(int argc, char const *argv[])
 
     new = num&((1<<n)-1);
     printf("Result = %d",new);
-
-
-
-
     return 0;
 }
