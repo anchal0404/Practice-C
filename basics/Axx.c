@@ -1,7 +1,7 @@
 /*
 Name: Anchal Rathore
-Description:
-Date:
+Description:WAP to check prime number.
+Date:27.12.2023
 */
 
 #include<stdio.h>
