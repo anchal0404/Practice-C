@@ -14,9 +14,6 @@ int replace_nbits_from_pos(int num, int a , int b, int val)
     num &=((1<<pos)-1);
     num<<=a;
     val |= num ;
-
-
-
     return val;
 }
 
