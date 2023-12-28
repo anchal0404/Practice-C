@@ -1,7 +1,7 @@
 /*
 Name: Anchal Rathore
-Description:
-Date:
+Description:WAP to implement your own ispunct() function
+Date:28.12.2023
 */
 #include <stdio.h>
 

@@ -1,14 +1,14 @@
 /*
 Name: Anchal Rathore
-Description:
-Date:
+Description:WAP to find 2nd largest element in an array
+Date:28.12.2023
 */
 
 #include <stdio.h>
 
 int sec_largest(int *arr, int size)
 {
-    /*int first,second;
+   int first,second;
     if (arr[0]<arr[1])
     {
         first = arr[1];
@@ -32,26 +32,7 @@ int sec_largest(int *arr, int size)
             second = arr[i];
         }
         i++;
-    }*/
-    for (int i = 0; i < size-1; i++)
-    {
-        for (int j = 0; j < size-i-1; j++)
-        {
-            if (arr[j+1]<arr[j])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j] = temp;
-            }
-        }
     }
-
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ",arr[i]);
-    }
-    
-    return arr[size-1];
 }
 
 int main()
