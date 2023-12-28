@@ -15,7 +15,6 @@ int print_bits(int num, int n)
         else
             printf("0 ");
     }
-    
 }
 
 int main()
