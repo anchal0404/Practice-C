@@ -1,14 +1,14 @@
 /*
 Name: Anchal Rathore
-Description:WAP to implement Circular left shift
+Description:WAP to implement Circular right shift
 Date:28.12.2023
 */
 
 #include <stdio.h>
 
-int circular_left(unsigned num, unsigned n)
+int circular_right(unsigned num, unsigned n)
 {
-    return ((num << n)|(num >> (32-n)));
+    return ((num >> n)|(num << (32-n)));
 }
 int print_bits(unsigned ret)
 {
@@ -32,7 +32,7 @@ int main()
     printf("Enter n:");
     scanf("%d", &n);
     
-    ret = circular_left(num, n);
+    ret = circular_right(num, n);
     
     print_bits(ret);
 }
