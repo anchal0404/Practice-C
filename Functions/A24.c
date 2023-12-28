@@ -1,15 +1,20 @@
 /*
 Name: Anchal Rathore
-Description:WAP to implement your own isalnum() function
+Description:WAP to implement your own islower() function
 Date:28.12.2023
 */
+
 #include <stdio.h>
 
 int my_isalnum(int ch)
 {
-    if((ch>='a' && ch <='z')||(ch>='A' && ch <='Z')||(ch>='0' && ch <='9'))
+    if ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z') || (ch>='0'&& ch <='9'))
+    {
         return 1;
-    return 0;
+    }
+    else
+        return 0;
+    
 }
 
 int main()
@@ -22,13 +27,9 @@ int main()
     
     ret = my_isalnum(ch);
 
-    if (ret)
-    {
+    if(ret)
         printf("The character '%c' is an alnum character\n",ch);
-    }
     else
-    {
-        printf("The character '%c' is not an alnum character\n",ch);
-    }
-    return 0;
+        printf("The character '%c' is not an alnum character.\n",ch);
+    
 }

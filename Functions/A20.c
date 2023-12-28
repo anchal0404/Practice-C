@@ -19,7 +19,6 @@ int print_bits(unsigned ret)
         else
             printf("0 ");
     }
-    
 }
 
 int main()
